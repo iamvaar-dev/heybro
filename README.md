@@ -1,5 +1,10 @@
 # HeyBro: The Standalone Android AI Agent - No Root + No Python Needed
 
+
+### Explanation + Demo
+
+[![Heybro | Native Android Standalone AI Agent - No Root + No Python Needed](https://img.youtube.com/vi/b0q0bHPGtck/hqdefault.jpg)](https://youtu.be/b0q0bHPGtck)
+
 [](https://github.com/iamvaar-dev/heybro)
 [](https://github.com/iamvaar-dev/heybro)
 [](https://github.com/iamvaar-dev/heybro)
