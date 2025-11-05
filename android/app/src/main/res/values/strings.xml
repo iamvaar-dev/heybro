@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name and basic strings -->
+    <string name="app_name">heybro</string>
+    <string name="app_description">100% On-Device AI Agent with Flutter + Kotlin + Chaquopy</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_description">heybro needs accessibility permissions to see and interact with your screen. This allows the AI to:
+
+• Read screen content and UI elements
+• Perform taps and gestures on your behalf
+• Navigate between apps and screens
+• Automate repetitive tasks
+
+Your privacy is protected - all AI processing happens on-device using Vertex AI. No personal data is sent to external servers.
+
+Enable this service to activate the AI agent.</string>
+
+    <string name="accessibility_service_summary">AI-powered screen automation and interaction</string>
+
+    <!-- Permission descriptions -->
+    <string name="overlay_permission_title">Display over other apps</string>
+    <string name="overlay_permission_description">The AI agent needs this permission to show status indicators and controls while running in the background.</string>
+
+    <string name="accessibility_permission_title">Accessibility Service</string>
+    <string name="accessibility_permission_description">Required for the AI to see your screen and perform actions like tapping and scrolling.</string>
+
+    <!-- Agent status messages -->
+    <string name="agent_starting">Starting AI Agent...</string>
+    <string name="agent_stopping">Stopping AI Agent...</string>
+    <string name="agent_active">AI Agent is active</string>
+    <string name="agent_inactive">AI Agent is inactive</string>
+    <string name="agent_error">Agent error occurred</string>
+
+    <!-- Vision and AI messages -->
+    <string name="vision_analyzing">Analyzing screen...</string>
+    <string name="vision_success">Vision analysis complete</string>
+    <string name="vision_failed">Vision analysis failed</string>
+    <string name="vision_testing">Testing vision capabilities...</string>
+
+    <!-- Action descriptions -->
+    <string name="action_tap">Tapping screen</string>
+    <string name="action_scroll">Scrolling content</string>
+    <string name="action_wait">Waiting for next action</string>
+    <string name="action_none">No action needed</string>
+
+    <!-- Button labels -->
+    <string name="start_agent">START AGENT</string>
+    <string name="stop_agent">STOP AGENT</string>
+    <string name="test_vision">TEST VISION</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="refresh">Refresh</string>
+    <string name="clear_logs">Clear Logs</string>
+
+    <!-- Dialog messages -->
+    <string name="permissions_required_title">Permissions Required</string>
+    <string name="permissions_required_message">This AI agent needs:\n\n• Accessibility Service (to read screens &amp; tap)\n• System Alert Window (for overlay UI)\n\nGrant these permissions to activate the agent.</string>
+
+    <string name="service_not_available_title">Service Not Available</string>
+    <string name="service_not_available_message">Accessibility service is not running. Please enable it in Android Settings > Accessibility > heybro.</string>
+
+    <string name="vision_test_title">Vision Test</string>
+    <string name="vision_test_message">Testing AI vision capabilities with current screen content...</string>
+
+    <!-- Error messages -->
+    <string name="error_no_accessibility">Accessibility service not enabled</string>
+    <string name="error_no_overlay">Overlay permission not granted</string>
+    <string name="error_screenshot_failed">Failed to capture screenshot</string>
+    <string name="error_vision_api">Vision API error</string>
+    <string name="error_network">Network connection error</string>
+    <string name="error_unknown">Unknown error occurred</string>
+
+    <!-- Success messages -->
+    <string name="success_agent_started">AI Agent started successfully</string>
+    <string name="success_agent_stopped">AI Agent stopped successfully</string>
+    <string name="success_screenshot">Screenshot captured</string>
+    <string name="success_vision_test">Vision test completed</string>
+    <string name="success_tap">Tap executed successfully</string>
+    <string name="success_scroll">Scroll completed successfully</string>
+
+    <!-- Log messages -->
+    <string name="log_no_logs">No logs yet. Start the agent to see activity.</string>
+    <string name="log_cleared">Logs cleared</string>
+    <string name="log_accessibility_connected">Accessibility service connected</string>
+
+    <string name="log_vision_module_loaded">Vision module loaded</string>
+
+    <!-- Notification messages (for foreground service) -->
+    <string name="notification_channel_name">AI Agent Service</string>
+    <string name="notification_channel_description">Background service for AI agent operations</string>
+    <string name="notification_title">heybro Running</string>
+    <string name="notification_content">AI agent is active and monitoring your screen</string>
+
+    <!-- Settings and configuration -->
+    <string name="settings_title">Agent Settings</string>
+    <string name="settings_vision_api">Vision API Configuration</string>
+    <string name="settings_project_id">Google Cloud Project ID</string>
+    <string name="settings_api_key">API Key</string>
+    <string name="settings_save">Save Settings</string>
+
+    <!-- UI Element descriptions -->
+    <string name="ui_status_panel">Agent Status Panel</string>
+    <string name="ui_control_buttons">Control Buttons</string>
+    <string name="ui_logs_panel">Agent Logs Panel</string>
+    <string name="ui_permission_chip">Permission Status</string>
+
+    <!-- Content descriptions for accessibility -->
+    <string name="cd_agent_status_indicator">Agent status indicator</string>
+    <string name="cd_permission_status">Permission status</string>
+    <string name="cd_start_stop_button">Start or stop agent button</string>
+    <string name="cd_test_vision_button">Test vision capabilities button</string>
+    <string name="cd_refresh_permissions">Refresh permissions status</string>
+    <string name="cd_clear_logs_button">Clear logs button</string>
+
+    <!-- Developer and debug strings -->
+    <string name="debug_element_found">UI element found</string>
+    <string name="debug_gesture_completed">Gesture completed</string>
+    <string name="debug_vision_response">Vision response received</string>
+    <string name="debug_api_call">Making API call</string>
+
+</resources>

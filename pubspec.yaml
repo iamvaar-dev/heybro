@@ -1,0 +1,59 @@
+name: Heybro
+description: "100% On-Device AI Agent with Flutter + Kotlin + Chaquopy"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client for Vertex AI API calls
+  http: ^1.1.0
+
+  # JSON handling
+  json_annotation: ^4.8.1
+
+  # Secure storage for API keys
+  flutter_secure_storage: ^9.2.2
+
+  # Cryptography utilities
+  crypto: ^3.0.3
+
+  # JWT handling for service account authentication
+  jose: ^0.3.4
+
+  # UI utilities
+  cupertino_icons: ^1.0.2
+
+  # Logging and debugging
+  logger: ^2.0.2+1
+
+  # Shared preferences for settings
+  shared_preferences: ^2.2.2
+
+  # Permission handling
+  permission_handler: ^11.0.1
+
+  # SVG support
+  flutter_svg: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/hey-bro.ppn
+
+  # App icons and launch images will be handled by flutter_launcher_icons

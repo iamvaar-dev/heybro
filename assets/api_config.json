@@ -1,0 +1,54 @@
+{
+  "vertex_ai": {
+    "project_id": "your-google-cloud-project-id",
+    "location": "us-central1",
+    "model": "gemini-pro-vision",
+    "endpoint": "https://us-central1-aiplatform.googleapis.com/v1/projects/{project_id}/locations/us-central1/publishers/google/models/gemini-pro-vision:predict",
+    "api_key": "your-api-key-here",
+    "service_account_path": "path/to/service-account.json"
+  },
+  "model_parameters": {
+    "temperature": 0.3,
+    "max_output_tokens": 1024,
+    "top_p": 0.8,
+    "top_k": 40,
+    "candidate_count": 1
+  },
+  "agent_settings": {
+    "vision_cycle_interval_seconds": 3,
+    "max_retries": 3,
+    "timeout_seconds": 30,
+    "enable_smart_actions": true,
+    "enable_logging": true,
+    "screenshot_quality": 90,
+    "max_screenshot_size": {
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "ui_automation": {
+    "gesture_duration_ms": 100,
+    "scroll_duration_ms": 500,
+    "tap_delay_ms": 50,
+    "double_tap_interval_ms": 300,
+    "long_press_duration_ms": 1000
+  },
+  "prompts": {
+    "default_analysis": "Analyze this mobile app screenshot and determine the best action to take. Look for interactive elements, forms, buttons, or content that needs scrolling. Respond with JSON containing action type, coordinates, and reasoning.",
+    "button_detection": "Find all clickable buttons, links, and interactive elements in this screenshot. Return their positions and text labels.",
+    "form_analysis": "Identify any forms, input fields, or data entry areas in this screenshot. Determine what information might need to be entered.",
+    "navigation_analysis": "Analyze the navigation elements and determine how to move forward in this app or complete the current task."
+  },
+  "security": {
+    "encrypt_api_calls": true,
+    "validate_ssl": true,
+    "mask_sensitive_data": true,
+    "log_api_responses": false
+  },
+  "developer": {
+    "debug_mode": false,
+    "save_screenshots": false,
+    "verbose_logging": false,
+    "test_mode": false
+  }
+}

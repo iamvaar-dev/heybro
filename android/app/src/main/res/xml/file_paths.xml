@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- External storage -->
+    <external-path name="external_files" path="." />
+
+    <!-- App's private external storage -->
+    <external-files-path name="external_app_files" path="." />
+
+    <!-- App's private internal storage -->
+    <files-path name="internal_files" path="." />
+
+    <!-- App's cache directory -->
+    <cache-path name="cache" path="." />
+
+    <!-- External cache directory -->
+    <external-cache-path name="external_cache" path="." />
+
+    <!-- Screenshots directory -->
+    <external-files-path name="screenshots" path="Screenshots/" />
+
+    <!-- Logs directory -->
+    <external-files-path name="logs" path="Logs/" />
+
+    <!-- Shared directory for AI agent files -->
+    <external-files-path name="agent_data" path="AgentData/" />
+</paths>

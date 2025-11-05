@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <!-- Transcription text container -->
+    <LinearLayout
+        android:id="@+id/transcription_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_overlay_background"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/transcription_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:padding="8dp"
+            android:text="Listening..."
+            android:alpha="0.9" />
+
+    </LinearLayout>
+
+    <com.vibeagent.dude.voice.overlay.VoiceWaveView
+        android:id="@+id/wave_animation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom" />
+
+    <!-- Text input container that appears in place of wave animation -->
+    <LinearLayout
+        android:id="@+id/text_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_overlay_background"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/text_input_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your request and press Enter..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/rounded_input_background"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:imeOptions="actionSend"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Buttons removed - now using tap-to-type, enter-to-submit, tap-outside-to-hide -->
+
+    </LinearLayout>
+
+</FrameLayout>
