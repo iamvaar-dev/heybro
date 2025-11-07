@@ -1,9 +1,8 @@
 # HeyBro: The Standalone Android AI Agent - No Root + No Python Needed
 
-
 ### Explanation + Demo
 
-[![Heybro | Native Android Standalone AI Agent - No Root + No Python Needed](https://img.youtube.com/vi/b0q0bHPGtck/hqdefault.jpg)](https://youtu.be/b0q0bHPGtck)
+[](https://youtu.be/b0q0bHPGtck)
 
 [](https://github.com/iamvaar-dev/heybro)
 [](https://github.com/iamvaar-dev/heybro)
@@ -23,7 +22,7 @@ This is an experimental application developed for educational and research purpo
 
   * **Standalone AI Agent:** Performs tasks and automation directly on your Android device.
   * **On-Device Automation:** No need for a computer or external server connection after setup.
-  * **AI-Powered:** Leverages AI (via Google's AI Studio) to understand and execute tasks.
+  * **AI-Powered:** Leverages AI (via a **Vercel API** and **Google AI**) to understand and execute tasks.
   * **Full Control:** Uses Accessibility and Overlay permissions to interact with and control the device's UI.
 
 ## 🚀 Getting Started
@@ -79,11 +78,17 @@ You have three options to run the app:
 
 To make the app functional, you must complete these setup steps on your Android device.
 
-### 1\. API Key Setup
+### 1\. API Configuration
 
-1.  Go to [Google AI Studio](https://aistudio.google.com/app/api-keys) to get your API key.
-2.  Open the HeyBro app on your device.
-3.  Navigate to the settings screen and paste your API key.
+This app now uses a **Vercel-hosted API** and a **Google Service Account** for AI processing.
+
+1.  **Obtain your credentials:** You must first have:
+      * Your Vercel API endpoint/key.
+      * Your Google Service Account JSON credentials.
+2.  **Configure the app:**
+      * Open the HeyBro app on your device.
+      * Navigate to the **API-Settings Screen**.
+      * Follow the on-screen prompts to enter your Vercel API details and provide your Google Service Account credentials. **Everything should be done within the app** in this settings screen.
 
 ### 2\. Grant Permissions
 
@@ -98,7 +103,7 @@ The app requires two critical permissions to function:
 
   * **Frontend:** [Flutter](https://flutter.dev/)
   * **Native Android:** [Kotlin](https://kotlinlang.org/)
-  * **AI:** [Google AI (Gemini)](https://aistudio.google.com/)
+  * **AI Backend:** [Vercel](https://vercel.com/) + [Google AI](https://ai.google/) (via Service Account)
 
 ## 🤝 Contributing
 
