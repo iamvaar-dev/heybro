@@ -8,7 +8,7 @@
 [](https://github.com/iamvaar-dev/heybro)
 [](https://github.com/iamvaar-dev/heybro)
 
-**HeyBro** is a standalone AI agent for Android designed for complete on-device automation. Built with Flutter and Kotlin, it operates directly on your device—no computer needed after the initial setup.
+**HeyBro** is a standalone AI agent for Android designed for complete on-device automation. Built with Flutter and Kotlin, it operates directly on your device—no computer needed.
 
 -----
 
@@ -22,8 +22,9 @@ This is an experimental application developed for educational and research purpo
 
   * **Standalone AI Agent:** Performs tasks and automation directly on your Android device.
   * **On-Device Automation:** No need for a computer or external server connection after setup.
-  * **AI-Powered:** Leverages AI (via a **Vercel API** and **Google AI**) to understand and execute tasks.
+  * **AI-Powered:** Leverages AI (via **Google Gemini AI**) to understand and execute tasks.
   * **Full Control:** Uses Accessibility and Overlay permissions to interact with and control the device's UI.
+  * **Voice Control:** Can control the app with voice [but the app should be opened for now. I will move the application to kotlin side to make it run in foreground.
 
 ## 🚀 Getting Started
 
@@ -80,15 +81,20 @@ To make the app functional, you must complete these setup steps on your Android 
 
 ### 1\. API Configuration
 
-This app now uses a **Vercel-hosted API** and a **Google Service Account** for AI processing.
+This app now uses a **Google Service Account** for AI processing. Use this [tutorial](https://www.youtube.com/watch?v=gjAVd784WqE) to enable get google service account json. 
+
+And enable the vertex AI API in with this [tutorial](https://youtu.be/Tt9poEVzQ6g?si=4QeqFaSWnq2MNUD1).
+
 
 1.  **Obtain your credentials:** You must first have:
-      * Your Vercel API endpoint/key.
       * Your Google Service Account JSON credentials.
 2.  **Configure the app:**
       * Open the HeyBro app on your device.
       * Navigate to the **API-Settings Screen**.
       * Follow the on-screen prompts to enter your Vercel API details and provide your Google Service Account credentials. **Everything should be done within the app** in this settings screen.
+
+
+IF YOU WANT TO ENABLE VOICE ASSISTANT YOU NEED TO HAVE [PORCUPINE](https://picovoice.ai/platform/porcupine/) API KEY.
 
 ### 2\. Grant Permissions
 
@@ -103,7 +109,7 @@ The app requires two critical permissions to function:
 
   * **Frontend:** [Flutter](https://flutter.dev/)
   * **Native Android:** [Kotlin](https://kotlinlang.org/)
-  * **AI Backend:** [Vercel](https://vercel.com/) + [Google AI](https://ai.google/) (via Service Account)
+  * **AI:** [Google AI](https://ai.google/) (via Service Account)
 
 ## 🤝 Contributing
 
