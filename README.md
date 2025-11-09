@@ -2,7 +2,7 @@
 
 ### Explanation + Demo
 
-[](https://youtu.be/b0q0bHPGtck)
+[![Watch the video](https://img.youtube.com/vi/b0q0bHPGtck/maxresdefault.jpg)](https://youtu.be/b0q0bHPGtck)
 
 [](https://github.com/iamvaar-dev/heybro)
 [](https://github.com/iamvaar-dev/heybro)
