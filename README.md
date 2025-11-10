@@ -1,34 +1,32 @@
-# HeyBro: The Standalone Android AI Agent - No Root + No Python Needed
+# HeyBro: Your Standalone Android AI Agent (No Root + No Python Needed)
 
-### Explanation + Demo
+### Demo Video
 
 [![Watch the video](https://img.youtube.com/vi/b0q0bHPGtck/maxresdefault.jpg)](https://youtu.be/b0q0bHPGtck)
 
-[](https://github.com/iamvaar-dev/heybro)
-[](https://github.com/iamvaar-dev/heybro)
-[](https://github.com/iamvaar-dev/heybro)
+## What is HeyBro?
 
-**HeyBro** is a standalone AI agent for Android designed for complete on-device automation. Built with Flutter and Kotlin, it operates directly on your device—no computer needed.
+**HeyBro** is a standalone AI agent that controls your phone directly to complete tasks for you. It can automatically send a WhatsApp message, send your friend money, send an email, capture a photo, and more, all based on your instructions.
 
 -----
 
-## ⚠️ Experimental Project Disclaimer
+## ⚠️ Warning: Experimental Project
 
-This is an experimental application developed for educational and research purposes. It is not intended for production use. Use this application at your own risk. The creator is not liable for any damages, data loss, or any other issues that may arise from its use.
+This app is experimental and was made for learning and research. It's not meant for everyday, reliable use. Please use it at your own risk. The creator is not responsible for any problems, data loss, or other issues that might happen.
 
 -----
 
 ## ✨ Features
 
-  * **Standalone AI Agent:** Performs tasks and automation directly on your Android device.
-  * **On-Device Automation:** No need for a computer or external server connection after setup.
-  * **AI-Powered:** Leverages AI (via **Google Gemini AI**) to understand and execute tasks.
-  * **Full Control:** Uses Accessibility and Overlay permissions to interact with and control the device's UI.
-  * **Voice Control:** Can control the app with voice [but the app should be opened for now. I will move the application to kotlin side to make it run in foreground.
+  * **Standalone AI:** Works directly on your Android device to get tasks done.
+  * **On-Device Automation:** No computer needed after setup.
+  * **AI-Powered:** Uses Google Gemini AI to understand what you want.
+  * **Full Control:** Uses Accessibility and Overlay permissions to see your screen and tap buttons for you.
+  * **Voice Control:** You can use your voice to give commands (the app must be open for this to work right now).
 
 ## 🚀 Getting Started
 
-Follow these steps to get HeyBro up and running on your device.
+Follow these steps to get HeyBro running.
 
 ### 1\. Clone the Repository
 
@@ -39,7 +37,7 @@ cd heybro
 
 ### 2\. Install Dependencies
 
-Ensure you have the Flutter SDK installed. Run the following command to fetch the project's dependencies:
+Make sure you have the Flutter SDK. Run this command to get the project's packages:
 
 ```bash
 flutter pub get
@@ -47,7 +45,7 @@ flutter pub get
 
 ### 3\. Run the Application
 
-You have three options to run the app:
+You have three options:
 
 **Option A: Android Emulator**
 
@@ -59,51 +57,53 @@ You have three options to run the app:
 
 **Option B: Physical Device**
 
-1.  Connect your Android device to your computer via USB.
-2.  Enable **USB Debugging** in your device's Developer Options.
+1.  Connect your Android phone to your computer with a USB cable.
+2.  Turn on **USB Debugging** in your phone's Developer Options.
 3.  Run the app:
     ```bash
     flutter run
     ```
 
-**Option C: Build APK**
+**Option C: Build APK (Manual Install)**
 
-1.  Build the release APK:
+1.  Build the installer file:
     ```bash
     flutter build apk
     ```
-2.  The APK will be generated in `build/app/outputs/flutter-apk/app-release.apk`.
-3.  Transfer this APK to your Android device and install it.
+2.  Find the file at `build/app/outputs/flutter-apk/app-release.apk`.
+3.  Copy this file to your phone and install it.
 
-## 🔧 Configuration
+## 🔧 Configuration (Important\!)
 
-To make the app functional, you must complete these setup steps on your Android device.
+You must do these steps on your phone to make the app work.
 
-### 1\. API Configuration
+### 1\. API Setup
 
-This app now uses a **Google Service Account** for AI processing. Use this [tutorial](https://www.youtube.com/watch?v=gjAVd784WqE) to enable get google service account json. 
+This app uses a **Google Service Account** for its AI brain.
 
-And enable the vertex AI API in with this [tutorial](https://youtu.be/Tt9poEVzQ6g?si=4QeqFaSWnq2MNUD1).
+1.  **Get Google Credentials:**
 
+      * You need to get your **Google Service Account JSON file**. Use this [tutorial](https://www.youtube.com/watch?v=gjAVd784WqE) to get it.
+      * You also need to **enable the Vertex AI API**. Use this [tutorial](https://youtu.be/Tt9poEVzQ6g?si=4QeqFaSWnq2MNUD1) to do that.
 
-1.  **Obtain your credentials:** You must first have:
-      * Your Google Service Account JSON credentials.
-2.  **Configure the app:**
-      * Open the HeyBro app on your device.
-      * Navigate to the **API-Settings Screen**.
-      * Follow the on-screen prompts to enter your Vercel API details and provide your Google Service Account credentials. **Everything should be done within the app** in this settings screen.
+2.  **Configure the App:**
 
+      * Open the HeyBro app on your phone.
+      * Go to the **API-Settings Screen**.
+      * Follow the instructions on that screen to enter your Google Service Account credentials. **You must do this inside the app.**
 
-IF YOU WANT TO ENABLE VOICE ASSISTANT YOU NEED TO HAVE [PORCUPINE](https://picovoice.ai/platform/porcupine/) API KEY.
+3.  **(Optional) Voice Assistant:**
+
+      * If you want to use voice commands, you need a [Porcupine](https://picovoice.ai/platform/porcupine/) API key. Enter this in the settings as well.
 
 ### 2\. Grant Permissions
 
-The app requires two critical permissions to function:
+The app needs two powerful permissions to work:
 
-1.  **Overlay Permission:** This allows the app to display its interface over other applications.
-      * Go to: `Settings > Apps > HeyBro > Display over other apps` and enable it.
-2.  **Accessibility Service:** This allows the app to read the screen and perform actions on your behalf.
-      * Go to: `Settings > Accessibility > HeyBro` and enable the service.
+1.  **Overlay Permission:** (Lets the app show things over other apps)
+      * Go to: `Settings > Apps > HeyBro > Display over other apps` and turn it ON.
+2.  **Accessibility Service:** (Lets the app read the screen and tap for you)
+      * Go to: `Settings > Accessibility > HeyBro` and turn the service ON.
 
 ## 💻 Tech Stack
 
@@ -113,7 +113,7 @@ The app requires two critical permissions to function:
 
 ## 🤝 Contributing
 
-Pull requests are welcome\! For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome\! If you want to make a big change, please open an issue first so we can talk about it.
 
 ## ⚖️ Legal Disclaimer
 
